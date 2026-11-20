@@ -1,1 +1,17 @@
-wwwwww
+name: poc-pipeline
+
+on: 
+  push:
+    branches: 
+      -'feature/'
+
+jobs:
+  build-test-analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name:  repository
+      uses: actions/checkout@v4
+
+      
